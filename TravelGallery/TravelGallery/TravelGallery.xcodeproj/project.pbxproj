@@ -15,9 +15,12 @@
 		3D166A0524B9CE9C00E031BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D166A0424B9CE9C00E031BA /* Assets.xcassets */; };
 		3D166A0824B9CE9C00E031BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D166A0624B9CE9C00E031BA /* LaunchScreen.storyboard */; };
 		3D166A1024B9DFC300E031BA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D166A0F24B9DFC300E031BA /* SignUpViewController.swift */; };
+		3D166A1224B9E94C00E031BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D166A1124B9E94C00E031BA /* GoogleService-Info.plist */; };
+		F011070B9139FDAF9210F614 /* Pods_TravelGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B04FD85B6D89A4BCE6C3984 /* Pods_TravelGallery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B04FD85B6D89A4BCE6C3984 /* Pods_TravelGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1669F524B9CE9700E031BA /* TravelGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1669F824B9CE9700E031BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D1669FA24B9CE9700E031BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		3D166A0724B9CE9C00E031BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D166A0924B9CE9C00E031BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D166A0F24B9DFC300E031BA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3D166A1124B9E94C00E031BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6623D966673CF87A353A95F /* Pods-TravelGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelGallery.release.xcconfig"; path = "Target Support Files/Pods-TravelGallery/Pods-TravelGallery.release.xcconfig"; sourceTree = "<group>"; };
+		FD547BC146DCA6AB3F373CAA /* Pods-TravelGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelGallery.debug.xcconfig"; path = "Target Support Files/Pods-TravelGallery/Pods-TravelGallery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F011070B9139FDAF9210F614 /* Pods_TravelGallery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E76A0D85D1AE69537F35E55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B04FD85B6D89A4BCE6C3984 /* Pods_TravelGallery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3D1669EC24B9CE9700E031BA = {
 			isa = PBXGroup;
 			children = (
 				3D1669F724B9CE9700E031BA /* TravelGallery */,
 				3D1669F624B9CE9700E031BA /* Products */,
+				E8A180542160D03FE21B050B /* Pods */,
+				0E76A0D85D1AE69537F35E55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +77,7 @@
 		3D1669F724B9CE9700E031BA /* TravelGallery */ = {
 			isa = PBXGroup;
 			children = (
+				3D166A1124B9E94C00E031BA /* GoogleService-Info.plist */,
 				3D1669F824B9CE9700E031BA /* AppDelegate.swift */,
 				3D1669FA24B9CE9700E031BA /* SceneDelegate.swift */,
 				3D1669FC24B9CE9700E031BA /* LoginViewController.swift */,
@@ -73,6 +91,16 @@
 			path = TravelGallery;
 			sourceTree = "<group>";
 		};
+		E8A180542160D03FE21B050B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD547BC146DCA6AB3F373CAA /* Pods-TravelGallery.debug.xcconfig */,
+				B6623D966673CF87A353A95F /* Pods-TravelGallery.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D166A0C24B9CE9C00E031BA /* Build configuration list for PBXNativeTarget "TravelGallery" */;
 			buildPhases = (
+				2B0D89BFB0E455DA2C2099A2 /* [CP] Check Pods Manifest.lock */,
 				3D1669F124B9CE9700E031BA /* Sources */,
 				3D1669F224B9CE9700E031BA /* Frameworks */,
 				3D1669F324B9CE9700E031BA /* Resources */,
+				F918A0BC62ED9DC34E39669F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +162,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D166A0824B9CE9C00E031BA /* LaunchScreen.storyboard in Resources */,
+				3D166A1224B9E94C00E031BA /* GoogleService-Info.plist in Resources */,
 				3D166A0524B9CE9C00E031BA /* Assets.xcassets in Resources */,
 				3D166A0024B9CE9700E031BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B0D89BFB0E455DA2C2099A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelGallery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F918A0BC62ED9DC34E39669F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelGallery/Pods-TravelGallery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelGallery/Pods-TravelGallery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelGallery/Pods-TravelGallery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D1669F124B9CE9700E031BA /* Sources */ = {
@@ -290,6 +363,7 @@
 		};
 		3D166A0D24B9CE9C00E031BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD547BC146DCA6AB3F373CAA /* Pods-TravelGallery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +381,7 @@
 		};
 		3D166A0E24B9CE9C00E031BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6623D966673CF87A353A95F /* Pods-TravelGallery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
