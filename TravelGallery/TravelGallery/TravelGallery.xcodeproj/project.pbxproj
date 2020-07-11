@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,8 +14,10 @@
 		3D166A0324B9CE9700E031BA /* TravelGallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D166A0124B9CE9700E031BA /* TravelGallery.xcdatamodeld */; };
 		3D166A0524B9CE9C00E031BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D166A0424B9CE9C00E031BA /* Assets.xcassets */; };
 		3D166A0824B9CE9C00E031BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D166A0624B9CE9C00E031BA /* LaunchScreen.storyboard */; };
-		3D166A1024B9DFC300E031BA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D166A0F24B9DFC300E031BA /* SignUpViewController.swift */; };
 		3D166A1224B9E94C00E031BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D166A1124B9E94C00E031BA /* GoogleService-Info.plist */; };
+		3D493FAC24BA550400BE6A51 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D493FAB24BA550400BE6A51 /* CityListViewController.swift */; };
+		3D493FAE24BA55D100BE6A51 /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D493FAD24BA55D100BE6A51 /* AddCityViewController.swift */; };
+		3D493FB024BA55DE00BE6A51 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D493FAF24BA55DE00BE6A51 /* ProfileViewController.swift */; };
 		F011070B9139FDAF9210F614 /* Pods_TravelGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B04FD85B6D89A4BCE6C3984 /* Pods_TravelGallery.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +32,10 @@
 		3D166A0424B9CE9C00E031BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D166A0724B9CE9C00E031BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D166A0924B9CE9C00E031BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D166A0F24B9DFC300E031BA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3D166A1124B9E94C00E031BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D493FAB24BA550400BE6A51 /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
+		3D493FAD24BA55D100BE6A51 /* AddCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewController.swift; sourceTree = "<group>"; };
+		3D493FAF24BA55DE00BE6A51 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B6623D966673CF87A353A95F /* Pods-TravelGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelGallery.release.xcconfig"; path = "Target Support Files/Pods-TravelGallery/Pods-TravelGallery.release.xcconfig"; sourceTree = "<group>"; };
 		FD547BC146DCA6AB3F373CAA /* Pods-TravelGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelGallery.debug.xcconfig"; path = "Target Support Files/Pods-TravelGallery/Pods-TravelGallery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +90,9 @@
 				3D166A0624B9CE9C00E031BA /* LaunchScreen.storyboard */,
 				3D166A0924B9CE9C00E031BA /* Info.plist */,
 				3D166A0124B9CE9700E031BA /* TravelGallery.xcdatamodeld */,
-				3D166A0F24B9DFC300E031BA /* SignUpViewController.swift */,
+				3D493FAB24BA550400BE6A51 /* CityListViewController.swift */,
+				3D493FAD24BA55D100BE6A51 /* AddCityViewController.swift */,
+				3D493FAF24BA55DE00BE6A51 /* ProfileViewController.swift */,
 			);
 			path = TravelGallery;
 			sourceTree = "<group>";
@@ -97,7 +103,6 @@
 				FD547BC146DCA6AB3F373CAA /* Pods-TravelGallery.debug.xcconfig */,
 				B6623D966673CF87A353A95F /* Pods-TravelGallery.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -218,10 +223,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D166A0324B9CE9700E031BA /* TravelGallery.xcdatamodeld in Sources */,
+				3D493FAE24BA55D100BE6A51 /* AddCityViewController.swift in Sources */,
 				3D1669FD24B9CE9700E031BA /* LoginViewController.swift in Sources */,
 				3D1669F924B9CE9700E031BA /* AppDelegate.swift in Sources */,
+				3D493FB024BA55DE00BE6A51 /* ProfileViewController.swift in Sources */,
 				3D1669FB24B9CE9700E031BA /* SceneDelegate.swift in Sources */,
-				3D166A1024B9DFC300E031BA /* SignUpViewController.swift in Sources */,
+				3D493FAC24BA550400BE6A51 /* CityListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
